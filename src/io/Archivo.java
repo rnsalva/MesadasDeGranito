@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Archivo {
 	
-	public LinkedList<Mesada> leerArchivo(String path) throws IOException{
+	public static LinkedList<Mesada> leerArchivo(String path) throws IOException{
 		
 		FileReader fr = new FileReader (path);
 		Scanner sc = new Scanner(fr);
@@ -28,7 +28,7 @@ public class Archivo {
 		
 	}
 	
-	public void escribirArchivo(int cantPilas, String path) throws IOException{
+	public static void escribirArchivo(int cantPilas, String path) throws IOException{
 		PrintWriter pw = new PrintWriter(path);
 		pw.println(cantPilas);
 		pw.close();

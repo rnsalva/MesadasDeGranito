@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class Apiladora{
 		
-	public int apilar(LinkedList<Mesada> lista){
+	public static int apilar(LinkedList<Mesada> lista){
 		
 		int cantPilas = 1;
 		/* Ordeno la lista segun el compareTo de Mesada (por largo).*/
